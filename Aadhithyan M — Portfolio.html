@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aadhithyan M — AI, ML &amp; Software Developer</title>
+<meta name="description" content="Portfolio of Aadhithyan M, final-year B.Tech Computer Science and Business Systems student exploring AI, Machine Learning, Data Science and software development.">
+<meta property="og:title" content="Aadhithyan M — Portfolio"><meta name="theme-color" content="#050505">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✍️</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050505;--bg2:#111;--card:#181818;--tx:#fff;--tx2:#b3b3b3;--ac:#a78bfa;--ac2:#7dd3fc;--line:#ffffff1a}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--tx);font:16px/1.6 Inter,system-ui,sans-serif;padding-top:env(safe-area-inset-top,0)}
+h1,h2,h3,.sg{font-family:'Space Grotesk',system-ui,sans-serif}a{color:inherit;text-decoration:none}
+section{padding:110px 6vw;max-width:1300px;margin:auto}
+h2{font-size:clamp(2rem,5vw,3.6rem);letter-spacing:-.03em;margin-bottom:40px;line-height:1.05}
+.lbl{font-size:.75rem;letter-spacing:.3em;color:var(--ac2);margin-bottom:14px;display:block}
+.rv{opacity:0;transform:translateY(30px);transition:1s cubic-bezier(.2,.7,.2,1)}.rv.in{opacity:1;transform:none}
+#intro{position:fixed;inset:0;background:#000;z-index:100;display:grid;place-content:center;text-align:center;transition:opacity 1s,transform 1s}
+#intro.out{opacity:0;transform:scale(1.12);pointer-events:none}
+#dot{position:absolute;left:50%;top:50%;width:8px;height:8px;border-radius:50%;background:#fff;box-shadow:0 0 20px 6px #fff8;animation:dot 1s both}
+@keyframes dot{from{opacity:0;transform:scale(0)}to{opacity:1;transform:scale(1)}}
+#intro svg{width:min(88vw,720px);overflow:visible;filter:drop-shadow(0 0 8px #ffffff88)}
+#sig{font:150px 'Great Vibes',cursive;fill:transparent;stroke:#e6e6ef;stroke-width:1.6;stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 3s 1s ease-in-out forwards,fill 1s 3.8s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}@keyframes fill{to{fill:#e6e6ef}}
+#sweep{position:absolute;inset:0;background:linear-gradient(100deg,transparent 40%,#ffffff55 50%,transparent 60%);transform:translateX(-100%);animation:sw 1.2s 4.2s forwards;mix-blend-mode:overlay}
+@keyframes sw{to{transform:translateX(100%)}}
+.i2{opacity:0;animation:fi 1s 4.6s forwards;letter-spacing:.3em;margin-top:8px}.i3{opacity:0;animation:fi 1s 5.1s forwards;color:var(--tx2);font-size:.9rem;margin-top:8px}
+@keyframes fi{to{opacity:1}}
+#skip{position:absolute;right:24px;bottom:24px;background:none;border:1px solid var(--line);color:var(--tx2);padding:8px 16px;border-radius:99px;cursor:pointer;font:inherit}
+nav{position:fixed;top:env(safe-area-inset-top,0);left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 5vw;transition:.4s}
+nav.sc{background:#050505b3;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav ul{display:flex;gap:26px;list-style:none;font-size:.85rem}nav a{color:var(--tx2);position:relative;padding:4px 0;transition:.3s}
+nav a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--ac);transition:.3s}
+nav a:hover,nav a.on{color:#fff}nav a:hover::after,nav a.on::after{width:100%}
+#mb{display:none;background:none;border:0;color:#fff;font-size:1.6rem}
+@media(max-width:900px){#mb{display:block}nav ul{position:fixed;inset:60px 0 auto;flex-direction:column;background:#050505f2;padding:24px 6vw;display:none}nav ul.open{display:flex}}
+#home{min-height:100vh;max-width:none;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:20px;position:relative;overflow:hidden;background:radial-gradient(circle at 75% 50%,#2a2a2a,transparent 55%),var(--bg)}
+#home::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,#ffffff07 0 1px,transparent 1px 90px);pointer-events:none}
+#cv{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hl{position:relative;z-index:2;padding-left:2vw}.hl small{letter-spacing:.4em;color:var(--tx2)}
+h1{font-size:clamp(3rem,9vw,7.5rem);line-height:.95;letter-spacing:-.04em;margin:10px 0 20px}
+.ttl{font-weight:700;color:#e5e5e5;margin-bottom:16px;max-width:560px}.hl p{color:var(--tx2);max-width:540px}
+.btns{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap}
+.b{display:inline-block;padding:14px 28px;border-radius:99px;border:1px solid #fff5;font-weight:500;transition:transform .2s,background .3s;cursor:pointer;background:none;color:#fff;font-size:1rem}
+.b.p{background:#fff;color:#000}.b:hover{background:var(--ac);color:#000;border-color:var(--ac)}
+.hr{position:relative;z-index:1;height:88vh;display:flex;justify-content:center;align-items:flex-end}
+.hr img{max-height:100%;max-width:100%;object-fit:contain;filter:grayscale(1) drop-shadow(0 0 50px #ffffff22);transition:transform .2s}
+.sh{position:absolute;bottom:-6vh;left:10%;right:10%;height:60px;background:radial-gradient(#000,transparent 70%)}
+.scr{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);font-size:.7rem;letter-spacing:.3em;color:var(--tx2);z-index:3;text-align:center}
+.scr::after{content:"";display:block;width:1px;height:36px;background:linear-gradient(#fff,transparent);margin:8px auto 0;animation:sl 2s infinite}
+@keyframes sl{50%{transform:scaleY(.4);transform-origin:top}}
+@media(max-width:800px){#home{grid-template-columns:1fr;padding-top:100px}.hr{height:70vh}.hl{padding:0}}
+.ab{display:grid;grid-template-columns:1.3fr 1fr;gap:60px}.ab p{color:var(--tx2);margin-bottom:20px}
+.pn{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:12px 28px}
+.pn div{padding:14px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column}.pn div:last-child{border:0}
+.pn b{font-size:.7rem;letter-spacing:.2em;color:var(--ac);font-weight:500}
+@media(max-width:800px){.ab{grid-template-columns:1fr}}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.sk h3{font-size:.8rem;letter-spacing:.2em;color:var(--tx2);margin:36px 0 14px;font-weight:500}
+.c{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;transition:.3s}
+.c:hover{transform:translateY(-6px);border-color:var(--ac);box-shadow:0 12px 40px #a78bfa22}
+.c i{display:block;font-style:normal;font-size:1.5rem;margin-bottom:8px;filter:grayscale(1)}
+.pj{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-bottom:60px;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:28px;transition:.4s}
+.pj:hover{border-color:var(--pc)}.pj:nth-child(even) .vis{order:2}
+.vis{aspect-ratio:16/10;border-radius:16px;overflow:hidden;position:relative;background:#0a0a0a}.vis svg{width:100%;height:100%;transition:transform .6s}.pj:hover .vis svg{transform:scale(1.06)}
+.pj h3{font-size:1.6rem;margin:6px 0 12px;line-height:1.2}.pj p{color:var(--tx2)}
+.tg{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.tg span{font-size:.75rem;border:1px solid var(--pc);color:var(--pc);padding:4px 12px;border-radius:99px}
+.pj .b{padding:10px 22px;font-size:.9rem}
+@media(max-width:800px){.pj{grid-template-columns:1fr}.pj:nth-child(even) .vis{order:0}}
+.tl{position:relative;padding-left:34px}.tl::before{content:"";position:absolute;left:5px;top:6px;bottom:0;width:1px;background:linear-gradient(var(--ac),transparent);transform-origin:top;transform:scaleY(0);transition:2s}.tl.in::before{transform:scaleY(1)}
+.tl .c{margin-bottom:20px;position:relative}.tl .c::before{content:"";position:absolute;left:-34px;top:28px;width:11px;height:11px;border-radius:50%;background:var(--ac);box-shadow:0 0 12px var(--ac)}
+.c ul{color:var(--tx2);padding-left:18px;margin-top:10px}.c em{color:var(--ac2);font-style:normal}
+#light{background:#f5f5f5;color:#171717;max-width:none}#light .in2{max-width:1300px;margin:auto}#light .c{background:#fff;border-color:#0002}#light .c p{color:#555}#light .lbl{color:#6d28d9}
+#contact{max-width:none;background:radial-gradient(circle at 20% 0,#a78bfa22,transparent 50%),#0a0a0a;text-align:left}
+.ct{max-width:1300px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:60px}.ct p{color:var(--tx2);margin-bottom:12px}
+form{display:grid;gap:14px}input,textarea{background:var(--card);border:1px solid var(--line);color:#fff;padding:14px;border-radius:12px;font:inherit;width:100%}
+input:focus,textarea:focus{outline:2px solid var(--ac)}
+@media(max-width:800px){.ct{grid-template-columns:1fr}}
+footer{padding:50px 6vw;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;color:var(--tx2);font-size:.9rem;align-items:center}
+footer nav,footer .s{display:flex;gap:16px;position:static;padding:0}
+:focus-visible{outline:2px solid var(--ac2);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-delay:0s!important;transition:none!important}html{scroll-behavior:auto}.rv{opacity:1;transform:none}}
+</style></head><body>
+
+<div id="intro" role="dialog" aria-label="Intro"><div id="dot"></div>
+<svg viewBox="0 0 720 200" aria-label="Aadhithyan signature"><text id="sig" x="360" y="150" text-anchor="middle">Aadhithyan</text><rect id="sweep" width="720" height="200" fill="none"/></svg>
+<div class="sg i2">AADHITHYAN M</div><div class="i3">Building Ideas Into Intelligent Solutions.</div>
+<button id="skip">Skip Intro</button></div>
+
+<nav id="nav"><a href="#home" class="sg" aria-label="Home"><b>AM</b></a><button id="mb" aria-label="Menu">☰</button>
+<ul id="menu"><li><a href="#home">Home</a><li><a href="#about">About</a><li><a href="#skills">Skills</a><li><a href="#projects">Projects</a><li><a href="#experience">Experience</a><li><a href="#certs">Certifications</a><li><a href="#education">Education</a><li><a href="#contact">Contact</a></ul></nav>
+
+<main>
+<section id="home"><canvas id="cv"></canvas>
+<div class="hl"><small>HELLO, I'M</small><h1>Aadhithyan M</h1>
+<div class="ttl">Computer Science &amp; Business Systems Student | AI &amp; ML Enthusiast | Software Developer</div>
+<p>Passionate about transforming ideas into intelligent digital solutions. I explore the intersection of Artificial Intelligence, Machine Learning, and software engineering to build meaningful applications that solve real-world problems.</p>
+<div class="btns"><a class="b p mg" href="#projects">Explore My Work</a><a class="b mg" href="resume.pdf" download>Download Resume</a></div></div>
+<div class="hr"><img id="ph" src="ai_photo-removebg-preview.png" alt="Aadhithyan M, full-body black and white portrait" onerror="this.style.display='none'"><div class="sh"></div></div>
+<div class="scr">SCROLL TO DISCOVER</div></section>
+
+<section id="about"><span class="lbl">01 — ABOUT</span><h2 class="rv">About Me</h2>
+<div class="ab"><div class="rv"><p>I am Aadhithyan M, a motivated and technology-driven final-year B.Tech student in Computer Science and Business Systems at V.S.B Engineering College, Tamil Nadu. With a strong interest in Artificial Intelligence, Machine Learning, Data Science, and Full-Stack Development, I enjoy exploring innovative technologies and developing impactful software solutions.</p>
+<p>My journey combines analytical thinking, continuous learning, and practical project development. I aim to build intelligent applications that bridge the gap between technology and real-world challenges.</p></div>
+<div class="pn rv"><div><b>DEGREE</b>B.Tech – Computer Science and Business Systems</div><div><b>INSTITUTION</b>V.S.B Engineering College</div><div><b>GRADUATION YEAR</b>2027</div><div><b>CGPA</b>7.52</div><div><b>LOCATION</b>Tamil Nadu, India</div><div><b>CAREER INTERESTS</b>AI, ML, Data Science, Software Development</div></div></div></section>
+
+<section id="skills" class="sk"><span class="lbl">02 — SKILLS</span><h2 class="rv">Technical Skills</h2>
+<h3>PROGRAMMING LANGUAGES</h3><div class="g rv"><div class="c"><i>☕</i>Java</div><div class="c"><i>🐍</i>Python</div><div class="c"><i>🗄️</i>MySQL</div></div>
+<h3>AI &amp; DATA TECHNOLOGIES</h3><div class="g rv"><div class="c"><i>🧠</i>Artificial Intelligence</div><div class="c"><i>📈</i>Machine Learning</div><div class="c"><i>📊</i>Data Science</div><div class="c"><i>✨</i>Generative AI</div></div>
+<h3>TOOLS &amp; PLATFORMS</h3><div class="g rv"><div class="c"><i>🔀</i>Git</div><div class="c"><i>🐙</i>GitHub</div><div class="c"><i>🧩</i>VS Code</div><div class="c"><i>🌘</i>Eclipse</div></div></section>
+
+<section id="projects"><span class="lbl">03 — PROJECTS</span><h2 class="rv">Featured Projects</h2>
+<article class="pj rv" style="--pc:#38bdf8"><div class="vis"><svg viewBox="0 0 320 200"><rect width="320" height="200" fill="#06121f"/><g stroke="#38bdf8" stroke-width="3" fill="none" opacity=".5"><path d="M20 60H300M20 140H300M80 20V180M240 20V180"/></g><path d="M30 140H80V60H240V140H290" stroke="#22d3ee" stroke-width="4" fill="none" stroke-dasharray="8 6"><animate attributeName="stroke-dashoffset" to="-56" dur="2s" repeatCount="indefinite"/></path><circle cx="80" cy="60" r="8" fill="#22d3ee"/><circle cx="240" cy="140" r="8" fill="#38bdf8"/><circle cx="290" cy="140" r="6" fill="#fff"/></svg></div>
+<div><span class="lbl">PROJECT 01</span><h3>Enhancing Navigation at Railway Station</h3><p>Developed a Digital Twin-based railway navigation system for real-time station monitoring. Built an interactive passenger navigation map using Edge AI concepts.</p><div class="tg"><span>Digital Twin</span><span>Edge AI</span><span>Navigation</span></div><a class="b" href="https://github.com/Aadhithyan2006" target="_blank" rel="noopener">GitHub</a></div></article>
+<article class="pj rv" style="--pc:#4ade80"><div class="vis"><svg viewBox="0 0 320 200"><rect width="320" height="200" fill="#07160d"/><rect x="24" y="24" width="130" height="70" rx="10" fill="#0f2a18" stroke="#4ade80"/><rect x="166" y="24" width="130" height="70" rx="10" fill="#0f2a18" stroke="#4ade80" opacity=".6"/><rect x="24" y="112" width="272" height="14" rx="7" fill="#123"/><rect x="24" y="112" width="180" height="14" rx="7" fill="#4ade80"/><circle cx="60" cy="160" r="14" fill="#facc15"/><circle cx="100" cy="160" r="14" fill="#86efac"/><circle cx="140" cy="160" r="14" fill="#166534"/><text x="40" y="66" fill="#4ade80" font-size="22">🌱 Lv 4</text></svg></div>
+<div><span class="lbl">PROJECT 02</span><h3>EcoVerse – A Gamified Digital World for Sustainable Learning</h3><p>Designed a gamified web application for sustainability education, integrating quizzes, rewards, and progress tracking to encourage environmental awareness.</p><div class="tg"><span>Gamification</span><span>Quizzes</span><span>Progress Tracking</span></div><a class="b" href="https://github.com/Aadhithyan2006" target="_blank" rel="noopener">GitHub</a></div></article>
+<article class="pj rv" style="--pc:#a78bfa"><div class="vis"><svg viewBox="0 0 320 200"><defs><linearGradient id="gp" x1="0" x2="1"><stop stop-color="#7c3aed"/><stop offset="1" stop-color="#3b82f6"/></linearGradient></defs><rect width="320" height="200" fill="#0d0a1c"/><rect x="24" y="24" width="180" height="34" rx="14" fill="#1e1b3a"/><rect x="116" y="70" width="180" height="34" rx="14" fill="url(#gp)"/><rect x="24" y="116" width="220" height="34" rx="14" fill="#1e1b3a"/><circle cx="60" cy="172" r="4" fill="#a78bfa"><animate attributeName="opacity" values="1;.2;1" dur="1s" repeatCount="indefinite"/></circle><circle cx="74" cy="172" r="4" fill="#a78bfa"><animate attributeName="opacity" values=".2;1;.2" dur="1s" repeatCount="indefinite"/></circle></svg></div>
+<div><span class="lbl">PROJECT 03</span><h3>Aura Support – AI-Powered Technical Support Agent</h3><p>An AI-powered technical support agent that helps users identify, diagnose, and troubleshoot common hardware, software, network, and system issues. The system categorizes user-reported problems and provides clear, step-by-step solutions through an interactive support experience.</p><div class="tg"><span>AI Agent</span><span>Troubleshooting</span><span>Chat Interface</span></div><a class="b" href="https://github.com/Aadhithyan2006" target="_blank" rel="noopener">GitHub</a></div></article></section>
+
+<section id="experience"><span class="lbl">04 — EXPERIENCE</span><h2 class="rv">Internship Experience</h2>
+<div class="tl rv"><div class="c"><h3>Machine Learning Intern</h3><em>Brainery Spot Technologies</em><ul><li>Worked on Machine Learning concepts and predictive models.<li>Performed data preprocessing, feature engineering, and model evaluation.</ul></div>
+<div class="c"><h3>Data Science Intern</h3><em>Brainery Spot Technologies</em><ul><li>Performed exploratory data analysis (EDA) and data visualization.<li>Cleaned and transformed datasets using Python and Pandas.</ul></div></div></section>
+
+<div id="light"><section id="certs" class="in2"><span class="lbl">05 — CERTIFICATIONS</span><h2 class="rv">Certifications</h2>
+<div class="g rv"><div class="c"><i>🏅</i><h3>Programming in Java</h3><p>NPTEL · Score: 90%</p></div><div class="c"><i>🏅</i><h3>Stack Developer in Java</h3><p>Infosys Springboard</p></div><div class="c"><i>🏅</i><h3>Data Management</h3><p>Infosys Springboard</p></div><div class="c"><i>🏅</i><h3>Data Science for Beginners</h3><p>Board Infinity</p></div></div></section></div>
+
+<section id="education"><span class="lbl">06 — EDUCATION</span><h2 class="rv">Education</h2>
+<div class="tl rv"><div class="c"><h3>B.Tech in Computer Science and Business Systems</h3><em>V.S.B Engineering College, Tamil Nadu</em><p style="color:var(--tx2)">2027 | CGPA: 7.52</p></div><div class="c"><h3>Higher Secondary Certificate (HSC)</h3><em>Kongu Higher Secondary School</em><p style="color:var(--tx2)">2023</p></div></div></section>
+
+<section id="contact"><div class="ct"><div class="rv"><span class="lbl">07 — CONTACT</span><h2>Let's Build Something Meaningful Together.</h2>
+<p>I'm always interested in exploring new technologies, collaborating on innovative projects, and connecting with people who share a passion for software and intelligent systems.</p>
+<p>Email: <a href="mailto:aadhithyantn47@gmail.com">aadhithyantn47@gmail.com</a><br>Phone: <a href="tel:+918248495093">+91 8248495093</a></p>
+<div class="btns"><a class="b p mg" href="mailto:aadhithyantn47@gmail.com">Email Me</a><a class="b mg" href="https://github.com/Aadhithyan2006" target="_blank" rel="noopener">GitHub</a><a class="b mg" href="https://linkedin.com/in/aadhithyan2006" target="_blank" rel="noopener">LinkedIn</a></div></div>
+<form class="rv" id="f"><input name="n" placeholder="Name" required aria-label="Name"><input name="e" type="email" placeholder="Email" required aria-label="Email"><input name="s" placeholder="Subject" required aria-label="Subject"><textarea name="m" rows="5" placeholder="Message" required aria-label="Message"></textarea><button class="b p" type="submit">Send Message</button></form></div></section>
+</main>
+
+<footer><div><b class="sg">Aadhithyan M © 2026</b><br>Designed with passion, powered by curiosity.</div>
+<div class="s"><a href="https://github.com/Aadhithyan2006" target="_blank" rel="noopener">GitHub</a><a href="https://linkedin.com/in/aadhithyan2006" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:aadhithyantn47@gmail.com">Email</a></div>
+<a class="b" href="#home">↑ Back to top</a></footer>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+let done=false;const end=()=>{if(done)return;done=true;$('#intro').classList.add('out');setTimeout(()=>$('#intro').remove(),1100);try{sessionStorage.setItem('seen',1)}catch(e){}};
+let seen=false;try{seen=sessionStorage.getItem('seen')}catch(e){}
+if(seen||rm)end();else setTimeout(end,6800);
+$('#skip')?.addEventListener('click',end);
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('in')),{threshold:.15});$$('.rv').forEach(e=>io.observe(e));
+const links=$$('#menu a'),secs=links.map(a=>$(a.getAttribute('href')));
+addEventListener('scroll',()=>{$('#nav').classList.toggle('sc',scrollY>40);let c=0;secs.forEach((s,i)=>{if(s.getBoundingClientRect().top<innerHeight*.4)c=i});links.forEach((a,i)=>a.classList.toggle('on',i===c))},{passive:true});
+$('#mb').onclick=()=>$('#menu').classList.toggle('open');links.forEach(a=>a.onclick=()=>$('#menu').classList.remove('open'));
+$$('.mg').forEach(b=>{b.addEventListener('mousemove',e=>{if(rm)return;const r=b.getBoundingClientRect();b.style.transform=`translate(${(e.clientX-r.left-r.width/2)/6}px,${(e.clientY-r.top-r.height/2)/6}px)`});b.addEventListener('mouseleave',()=>b.style.transform='')});
+addEventListener('mousemove',e=>{if(rm)return;$('#ph').style.transform=`translate(${(e.clientX/innerWidth-.5)*-16}px,${(e.clientY/innerHeight-.5)*-8}px)`});
+$('#f').onsubmit=e=>{e.preventDefault();const d=new FormData(e.target);location.href=`mailto:aadhithyantn47@gmail.com?subject=${encodeURIComponent(d.get('s'))}&body=${encodeURIComponent(d.get('m')+'\n\n— '+d.get('n')+' ('+d.get('e')+')')}`};
+// particles
+const cv=$('#cv'),x=cv.getContext('2d');let P=[];const rs=()=>{cv.width=cv.offsetWidth;cv.height=cv.offsetHeight;P=Array.from({length:45},()=>({x:Math.random()*cv.width,y:Math.random()*cv.height,r:Math.random()*1.5+.3,v:Math.random()*.25+.05}))};rs();addEventListener('resize',rs);
+(function f(){x.clearRect(0,0,cv.width,cv.height);x.fillStyle='#ffffff55';P.forEach(p=>{p.y-=rm?0:p.v;if(p.y<0)p.y=cv.height;x.beginPath();x.arc(p.x,p.y,p.r,0,7);x.fill()});requestAnimationFrame(f)})();
+</script></body></html>
